@@ -4,5 +4,7 @@ d=pd.DataFrame({
 'Author Name': ['Padmareddy','Thomas','Erich gamma','Steve','Stuart','Alfred','jon','Alex','Simon','Micheal']
 })
 print(d)
-name=input("enter the author name")
+name=input("enter the ending letter of author name")
 print(d[d['Author Name'].str.endswith(name)])
+name1=input("enter the starting letter of author name")
+print(d[d['Author Name'].str.startswith(name1)])
